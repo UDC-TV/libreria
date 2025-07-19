@@ -3,6 +3,8 @@ Libreria è il posto in cui consultare e scaricare liberamente tutti i documenti
 
 # Utilizzo e configurazione
 
+Accessibile su: [https://udc-tv.github.io/libreria/](https://udc-tv.github.io/libreria/)
+
 ## Sito
 
 Root di pubblicazione: `\docs`. Tutto quello che è presente nel repository, esterno a questa cartella, non è direttamente pubblicabile nel sito.
