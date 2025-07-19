@@ -7,57 +7,80 @@
   <link rel="stylesheet" href="style/style.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
-<body>
-  <h1>Documenti</h1>
+
+<nav>
+  <a href="index.html" class="logo">
+    <img src="images/logo.png" alt="UDC TV Logo">
+  </a>
   <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="videos.html">Video</a></li>
+    <li><a href="docs.html" class="active">Documenti</a></li>
+</nav>
+
+<body>
+
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">Tutti</button>
+    <button class="filter-btn" data-filter="tecnico">Tecnico</button>
+    <button class="filter-btn" data-filter="amministrazione">Amministrazione</button>
+    <button class="filter-btn" data-filter="fiba">FIBA</button>
+    <button class="filter-btn" data-filter="altro">Altro</button>
+  </div>
+
+  <h1>Documenti</h1>
+  <ul id="document-list">
     <!--
-    <li>
+    <li data-type="FILTER">
       <a class="title" href="publish/ target="_blank">TITLE</a>
       <div class="desc">DESCRIPTION.</div>
     </li>
     -->
 
-    <li>
+    <li data-type="tecnico">
       <a class="title" href="publish/rtecnico.pdf target="_blank">Regolamento Tecnico in italiano</a>
       <div class="desc">Regolamento Tecnico della Pallacanestro. Traduzione FIP.</div>
     </li>
 
-    <li>
+    <li data-type="tecnico">
       <a class="title" href="publish/OBRI-ita.pdf target="_blank">Interpretazioni FIBA in italiano</a>
       <div class="desc">Interpretazioni FIBA. Traduzione FIP.</div>
     </li>
 
-    <li>
-      <a class="title" href="publish/criteri-24-25.pdf target="_blank">CRITERI UDC 24/25</a>
+    <li data-type="amministrazione">
+      <a class="title" href="publish/criteri-24-25.pdf target="_blank">Criteri UDC 24/25</a>
       <div class="desc">Criteri di impiego e valutazione UDC. Anno 24/25.</div>
     </li>
 
-    <li>
+    <li data-type="tecnico">
       <a class="title" href="publish/DOA-25_26_versione-3.01.pdf target="_blank">DOA 25/26</a>
       <div class="desc">Versione 3.1.</div>
     </li>
     
-    <li>
+    <li data-type="altro">
       <a class="title" href="publish/manuale-statistico-fiba-2024-v1.0-ita.pdf" target="_blank">Manuale statistico FIBA 2024 v1.0 ITA</a>
       <div class="desc">Traduzione italiana del manuale stats FIBA.</div>
     </li>
     
-    <li>
+    <li data-type="amministrazione">
       <a class="title" href="publish/regare-marzo-25.pdf" target="_blank">Regolamento Esecutivo Gare</a>
       <div class="desc">Versione Marzo 2025.</div>
     </li>
     
-    <li>
+    <li data-type="amministrazione">
       <a class="title" href="publish/rgiustizia-maggio-25.pdf" target="_blank">Regolamento di Giustizia</a>
       <div class="desc">Versione Maggio 2025.</div>
     </li>
     
-    <li>
+    <li data-type="fiba">
       <a class="title" href="https://library.fibairef.basketball/images/documents/c19dfc92961fcca1416524a54b87ad88/FIBA_Table_Officials_Manual_v6_5_2025_en.pdf" target=_blank">FIBA TOs MANUAL</a>
       <div class="desc">Manuale Ufficiali di Campo FIBA.</div>
     </li>
 
   </ul>
+
+  <script src="scripts/script.js"></script>
+
   <footer>
     &copy; 2025 - UDC TV - TABLE OFFICIALS TV - UDC Archivio Clip<br>Unofficial page, no connection with FIP, CIA, FIBA, ECA or any other 🏀 reality.
   </footer>
