@@ -91,6 +91,14 @@ nav a.active::after {
   background: #0066cc;
 }
 
+nav ul {
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
+
 nav li {
   margin-bottom: 0.5rem;
   border-bottom: 1px solid #eee;
