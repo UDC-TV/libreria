@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  max-width: 650px;
+  max-width: 850px;
   margin: 2.5rem auto;
   padding: 0 1rem;
 }
@@ -58,8 +58,6 @@ nav {
   color: #222;
   display: flex;
   gap: 1.5rem;
-  overflow-x: auto;
-  white-space: nowrap;
 }
 
 nav a {
@@ -68,7 +66,6 @@ nav a {
   padding: 0.5rem 0;
   position: relative;
   transition: color 0.2s ease;
-  display: inline-block;
 }
 
 nav a:hover {
