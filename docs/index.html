@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libreria - UDC.TV</title>
+    <meta name="description"
+        content="Libreria è il posto in cui consultare e scaricare liberamente tutti i documenti (tecnici-amministrativi) relativi al mondo arbitrale della pallacanestro!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <div class="background-pattern"></div>
+
+    <div class="container">
+        <header class="header">
+            <div class="logo-container">
+                <img src="logo.png" alt="UDC.TV Logo" class="logo">
+            </div>
+            <h1 class="title">Libreria</h1>
+            <p class="subtitle">Consulta e scarica liberamente tutti i documenti relativi al mondo arbitrale della
+                pallacanestro</p>
+        </header>
+
+        <main class="content">
+            <div class="search-container">
+                <div class="search-box">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="text" id="searchInput" placeholder="Cerca documenti..." class="search-input">
+                </div>
+            </div>
+
+            <div class="filter-container">
+                <button class="filter-btn active" data-category="all">
+                    <span class="filter-icon">📚</span>
+                    Tutti
+                </button>
+                <button class="filter-btn" data-category="tecnico">
+                    <span class="filter-icon">📋</span>
+                    Tecnico
+                </button>
+                <button class="filter-btn" data-category="amministrazione">
+                    <span class="filter-icon">⚖️</span>
+                    Amministrazione
+                </button>
+                <button class="filter-btn" data-category="fiba">
+                    <span class="filter-icon">🌍</span>
+                    FIBA
+                </button>
+                <button class="filter-btn" data-category="altro">
+                    <span class="filter-icon">🏀</span>
+                    Altro
+                </button>
+            </div>
+
+            <div class="legend" aria-hidden="false">
+                <h4>Legenda livelli - Rischio errore</h4>
+                <ul class="legend-list">
+                    <li><span class="legend-badge" style="background:#2ecc71;"></span> Basso</li>
+                    <li><span class="legend-badge" style="background:#f1c40f;"></span> Medio</li>
+                    <li><span class="legend-badge" style="background:#e74c3c;"></span> Alto</li>
+                    <li><span class="legend-badge" style="background:#7d7d7d;"></span> Documento Deprecato</li>
+                </ul>
+            </div>
+
+            <!-- Griglia dei documenti -->
+
+            <div class="documents-grid" id="documentsGrid">
+
+                <!-- OG FIBA OBR 2026-->
+                 <a href="publish/OBR2026.pdf" target="_blank" class="document-card"
+                    data-category="fiba" data-title="FIBA OBR" data-level="basso">
+                    <div class="document-content">
+                        <h3 class="document-title">FIBA OBR</h3>
+                        <p class="document-description">Official Basketball Rules. Versione 2026.</p>
+                        <div class="document-meta">
+                            <span class="document-category">FIBA</span>
+                            <span class="document-date">2026</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- DOA 26/27 -->
+                <a href="https://fip.it/wp-content/uploads/2026/07/DOA-26_27-versione-2.pdf" target="_blank" class="document-card"
+                    data-category="tecnico" data-title="DOA 26/27" data-level="basso">
+                    <div class="document-content">
+                        <h3 class="document-title">DOA 26/27</h3>
+                        <p class="document-description">Versione 2.</p>
+                        <div class="document-meta">
+                            <span class="document-category">Tecnico</span>
+                            <span class="document-date">26/27</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- APPENDICE DOA 26/27 -->
+                <a href="publish/Appendice-DOA-2026_2027.pdf" target="_blank" class="document-card"
+                    data-category="Amministrazione" data-title="Appendice DOA 26/27" data-level="basso">
+                    <div class="document-content">
+                        <h3 class="document-title">Appendice DOA 26/27</h3>
+                        <p class="document-description">Versione 1.</p>
+                        <div class="document-meta">
+                            <span class="document-category">Amministrazione</span>
+                            <span class="document-date">26/27</span>
+                        </div>
+                    </div>
+                </a>
+
+
+                <!-- DOA 25/26 -->
+                <a href="publish/DOA-25_26-versione-4.pdf" target="_blank" class="document-card"
+                    data-category="tecnico" data-title="DOA 25/26" data-level="basso">
+                    <div class="document-content">
+                        <h3 class="document-title">DOA 25/26</h3>
+                        <p class="document-description">Versione 4.</p>
+                        <div class="document-meta">
+                            <span class="document-category">Tecnico</span>
+                            <span class="document-date">25/26</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Errori correggibili -->
+                <a href="publish/vademecum-errori-correggibili.pdf" target="_blank" class="document-card"
+                    data-category="tecnico" data-title="Errori correggibili" data-level="basso">
+                    <div class="document-content">
+                        <h3 class="document-title">Errori correggibili</h3>
+                        <p class="document-description">Vademecum su errori correggibili. Settore Tecnico CIA.</p>
+                        <div class="document-meta">
+                            <span class="document-category">Tecnico</span>
+                            <span class="document-date">2025</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Regolamento Esecutivo Gare -->
+                <a href="publish/regare-marzo26.pdf" target="_blank" class="document-card"
+                    data-category="amministrazione" data-title="Regolamento Esecutivo Gare" data-level="basso">
+                    <div class="document-content">
+                        <h3 class="document-title">Regolamento Esecutivo Gare</h3>
+                        <p class="document-description">Versione marzo 2026.</p>
+                        <div class="document-meta">
+                            <span class="document-category">Amministrazione</span>
+                            <span class="document-date">Marzo 2026</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Regolamento CIA -->
+                <a href="publish/rcia-marzo26.pdf" target="_blank" class="document-card"
+                    data-category="amministrazione" data-title="Regolamento CIA" data-level="basso">
+                    <div class="document-content">
+                        <h3 class="document-title">Regolamento CIA</h3>
+                        <p class="document-description">Versione marzo 2026.</p>
+                        <div class="document-meta">
+                            <span class="document-category">Amministrazione</span>
+                            <span class="document-date">Marzo 2026</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Regolamento di Giustizia -->
+                <a href="publish/rgiustizia-settembre-25.pdf" target="_blank" class="document-card"
+                    data-category="amministrazione" data-title="Regolamento di Giustizia" data-level="basso">
+                    <div class="document-content">
+                        <h3 class="document-title">Regolamento di Giustizia</h3>
+                        <p class="document-description">Versione settembre 2025.</p>
+                        <div class="document-meta">
+                            <span class="document-category">Amministrazione</span>
+                            <span class="document-date">Settembre 2025</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Modalità di trasferta CIA -->
+                <a href="publish/trasferta-25-26.pdf" target="_blank" class="document-card"
+                    data-category="amministrazione" data-title="Modalità di trasferta CIA" data-level="basso">
+                    <div class="document-content">
+                        <h3 class="document-title">Modalità di trasferta CIA</h3>
+                        <p class="document-description">Anno 2025/26.</p>
+                        <div class="document-meta">
+                            <span class="document-category">Amministrazione</span>
+                            <span class="document-date">2025/26</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Regole a tempo -->
+                <a href="publish/cia-settore-tecnico-regole-a-tempo.pdf" target="_blank" class="document-card"
+                    data-category="tecnico" data-title="Regole a tempo" data-level="alto">
+                    <div class="document-content">
+                        <h3 class="document-title">Regole a tempo</h3>
+                        <p class="document-description">Circolare chiarimenti sulle regole a tempo. Settore Tecnico CIA.
+                        </p>
+                        <div class="document-meta">
+                            <span class="document-category">Tecnico</span>
+                            <span class="document-date">2025</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Utilizzo IRS -->
+                <a href="publish/lettera-precisazione-IRS-Commissioner-CIA.pdf" target="_blank" class="document-card"
+                    data-category="tecnico" data-title="Utilizzo IRS" data-level="basso">
+                    <div class="document-content">
+                        <h3 class="document-title">Utilizzo IRS</h3>
+                        <p class="document-description">Precisazioni del Commissioner CIA sulle modalità di utilizzo
+                            IRS.</p>
+                        <div class="document-meta">
+                            <span class="document-category">Tecnico</span>
+                            <span class="document-date">2025</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- FIBA TOs MANUAL -->
+                <a href="https://library.fibairef.basketball/doc/anZ0UTNCaTlZNVdCZW1IYTZHOFNjUT09" target="_blank"
+                    class="document-card" data-category="fiba" data-title="FIBA TOs MANUAL" data-level="medio">
+                    <div class="document-content">
+                        <h3 class="document-title">FIBA TOs MANUAL</h3>
+                        <p class="document-description">Manuale Ufficiali di Campo FIBA. Versione 6.6.</p>
+                        <div class="document-meta">
+                            <span class="document-category">FIBA</span>
+                            <span class="document-date">v6.6</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Regolamento impianti sportivi FIP -->
+                <a href="publish/regolamento-impianti-sportivi.pdf" target="_blank" class="document-card"
+                    data-category="amministrazione" data-title="Regolamento impianti sportivi FIP" data-level="basso">
+                    <div class="document-content">
+                        <h3 class="document-title">Regolamento impianti sportivi FIP</h3>
+                        <p class="document-description">Delibera n.144 del C.F. n.2 del 26 settembre 2014. Revisione
+                            25/02/2020.</p>
+                        <div class="document-meta">
+                            <span class="document-category">Amministrazione</span>
+                            <span class="document-date">2020</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Manuale statistico FIBA 2024 v1.0 ITA -->
+                <a href="publish/manuale-statistico-fiba-2024-v1.0-ita.pdf" target="_blank" class="document-card"
+                    data-category="fiba" data-title="Manuale statistico FIBA 2024 v1.0 ITA" data-level="medio">
+                    <div class="document-content">
+                        <h3 class="document-title">Manuale statistico FIBA 2024 v1.0 ITA</h3>
+                        <p class="document-description">Prima traduzione italiana del manuale stats FIBA. By UDC.TV</p>
+                        <div class="document-meta">
+                            <span class="document-category">FIBA</span>
+                            <span class="document-date">2024</span>
+                        </div>
+                    </div>
+                </a>
+
+            <!-- INIZIO SEZIONE ARCHIVIO (FILE@2024)-->
+
+            <!-- OG FIBA OBR 24-->
+                 <a href="publish/OBR2024.pdf" target="_blank" class="document-card"
+                    data-category="fiba" data-title="FIBA OBR" data-level="deprecato">
+                    <div class="document-content">
+                        <h3 class="document-title">FIBA OBR</h3>
+                        <p class="document-description">Official Basketball Rules. Versione 2024.</p>
+                        <div class="document-meta">
+                            <span class="document-category">FIBA</span>
+                            <span class="document-date">2024</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- OG FIBA OBRIs 24-->
+
+                <a href="publish/OBRI2024.pdf" target="_blank" class="document-card"
+                    data-category="fiba" data-title="FIBA OBR Interpretations" data-level="deprecato">
+                    <div class="document-content">
+                        <h3 class="document-title">FIBA OBR Interpretations</h3>
+                        <p class="document-description">Interpretazioni Ufficiali FIBA. Versione 2024.</p>
+                        <div class="document-meta">
+                            <span class="document-category">FIBA</span>
+                            <span class="document-date">2024</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Manuale UDC LINK -->
+                <a href="https://cia.fip.it/wp-content/uploads/2025/03/Manuale-UdC-v.2025.01.pdf" target="_blank" class="document-card" data-category="tecnico"
+                    data-title="Manuale UDC" data-level="deprecato">
+                    <div class="document-content">
+                        <h3 class="document-title">Manuale UDC</h3>
+                        <p class="document-description">Manuale ufficiali di campo UDC. Versione 2025.</p>
+                        <div class="document-meta">
+                            <span class="document-category">Tecnico</span>
+                            <span class="document-date">2025</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Regolamento Tecnico Integrato FIP LINK -->
+                <a href="https://cia.fip.it/wp-content/uploads/2024/11/Regolamento-Tecnico-della-Pallacanestro-2024_2025.pdf" target="_blank" class="document-card" data-category="tecnico"
+                    data-title="Regolamento Tecnico Integrato FIP" data-level="deprecato">
+                    <div class="document-content">
+                        <h3 class="document-title">Regolamento Tecnico Integrato FIP</h3>
+                        <p class="document-description">Regolamento Tecnico Integrato della Pallacanestro. Versione 2024.</p>
+                        <div class="document-meta">
+                            <span class="document-category">Tecnico</span>
+                            <span class="document-date">2024</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Regolamento Tecnico in italiano -->
+                <a href="publish/rtecnico.pdf" target="_blank" class="document-card" data-category="tecnico"
+                    data-title="Regolamento Tecnico in italiano" data-level="deprecato">
+                    <div class="document-content">
+                        <h3 class="document-title">Regolamento Tecnico in italiano</h3>
+                        <p class="document-description">Regolamento Tecnico della Pallacanestro. Traduzione FIP.</p>
+                        <div class="document-meta">
+                            <span class="document-category">Tecnico</span>
+                            <span class="document-date">2025</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Interpretazioni FIBA in italiano -->
+                <a href="publish/OBRI-ita.pdf" target="_blank" class="document-card" data-category="tecnico"
+                    data-title="Interpretazioni FIBA in italiano" data-level="deprecato">
+                    <div class="document-content">
+                        <h3 class="document-title">Interpretazioni FIBA in italiano</h3>
+                        <p class="document-description">Interpretazioni FIBA. Traduzione FIP.</p>
+                        <div class="document-meta">
+                            <span class="document-category">Tecnico</span>
+                            <span class="document-date">2025</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Criteri UDC -->
+                <a href="publish/criteri-udc-25-26.pdf" target="_blank" class="document-card"
+                    data-category="amministrazione" data-title="Criteri UDC" data-level="deprecato">
+                    <div class="document-content">
+                        <h3 class="document-title">Criteri UDC</h3>
+                        <p class="document-description">Criteri di impiego e valutazione UDC. Anno 25/26.</p>
+                        <div class="document-meta">
+                            <span class="document-category">Amministrazione</span>
+                            <span class="document-date">25/26</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- FINE LISTA DOCUMENTI-->
+            </div>
+
+
+            <div class="empty-state" id="emptyState" style="display: none;">
+                <div class="empty-icon">🔍</div>
+                <h3>Nessun documento trovato</h3>
+                <p>Prova a modificare i filtri o la ricerca</p>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 UDC.TV - Ufficiali di Campo TV</p>
+            <p class="footer-links">
+                <a href="https://udc-tv.github.io/links/">Home</a>
+                <span>•</span>
+                <a href="https://github.com/UDC-TV/libreria" target="_blank">GitHub</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
